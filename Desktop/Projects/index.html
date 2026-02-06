@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather Application</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <div class="main">
+        <div class="box">
+            <div class="inp">
+                <input type="text"  placeholder="Enter city name">
+                <button><i class="fa-solid fa-magnifying-glass"></i></button>
+            </div>
+        </div>
+        <div class="box-main">
+            <h1 id="country">New York</h1>
+            <img id="weatherimg" src="images/cloudy.png" alt="cloud png">
+            <h1 id="temp">25°C</h1>
+            <h3 id="des">Cloudy</h3>
+            <div class="two">
+                <div class="inner">
+                    <div class="hum">
+                        <img id="weatherimg" src="images/humidity.png" alt="humidity png">
+                        <h3 id="humidity">Humidity:60%</h3>
+                    </div>
+                </div>
+                <div class="inner">
+                    <div class="hum">
+                        <img id="weatherimg" src="images/wind.png" alt="wind png">
+                        <h3 id="wind">Wind Speed: 10km/hr</h3>
+                    </div>
+                </div>
+                
+            </div>
+            <p id="error">Entered the invalid city name</p>
+        </div>
+
+    </div>
+    <!-- <div id="popup" class="popup">
+        <div class="dialog-box">
+         <p id="popupmsg"></p>
+         <button onclick="closepopup()">OK</button>
+        </div>
+    </div> -->
+    <script src="script.js"></script>
+</body>
+</html>
